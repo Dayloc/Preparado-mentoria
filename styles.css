@@ -1,2 +1,72 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.atencion {
+  color: brown;
+}
 
- 
+li {
+  color: violet;
+}
+
+/* Construcción de mi loyout */
+
+.loyout {
+  width: 350px;
+  height: 400px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Demosle color de fondo para hacernos una guia visual*/
+
+.header-loyout {
+  background-color: rgb(130, 132, 132);
+  height: 20%;
+  color: azure;
+}
+
+.navigation-loyout {
+  background-color: rgb(219, 25, 193);
+  height: 10%;
+  color: azure;
+}
+
+.body-loyout {
+  height: 60%;
+  color: azure;
+  gap: 5px;
+  display: flex;
+}
+
+.sidebar {
+  background-color: rgb(8, 135, 107);
+  width: 30%;
+}
+.main-content {
+  background-color: rgb(95, 207, 93);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.footer-loyout {
+  background-color: rgb(219, 99, 25);
+  height: 10%;
+  color: azure;
+}
+
+.article-1 {
+  background-color: rgb(57, 57, 201);
+  height: 30%;
+}
+.article-2 {
+  background-color: rgb(57, 57, 201);
+  height: 30%;
+}

@@ -1,200 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles.css" />
+
     <title>Document</title>
   </head>
 
-  <body class="d-flex flex-column bg-dark gap-2">
-    <div class="container bg-info vh-50 mt-4">
-      <div class="row bg-primary d-flex text-center border border-black gap-1">
-        <!-- tengo todos centrados al padre -->
-        <div class="col border border-black">1</div>
-        <div class="col border border-black">2</div>
-        <div class="col border border-black">3</div>
-        <div class="col border border-black">4</div>
-        <div class="col border border-black">5</div>
-        <div class="col border border-black">6</div>
-      </div>
-      <div class="row bg-secondary border border-black">
-        <div class="col-2 bg-info">Cojo 2 espacios</div>
-        <div class="col-3 bg-warning">Cojo 3 espacios</div>
-        <div class="col-6 bg-danger">Cojo 6 espacios</div>
-        <div class="col bg-primary">Cojo 1</div>
-        <!-- hasta aqui se cogieron los 12, salta para la otra linea -->
-        <div class="col bg-primary">5</div>
-        <div class="col">6</div>
-      </div>
-      <div class="row d-flex bg-warning border border-danger-subtle">
-        <div class="col bg">1</div>
-        <div class="col bg">2</div>
-        <div class="col bg">3</div>
-        <div class="col bg">4</div>
-        <div class="col bg">5</div>
-        <div class="col bg">6</div>
-      </div>
-      <div class="row bg-success border border-danger-subtle">
-        <div class="col bg-info">1</div>
-        <div class="col bg-warning">2</div>
-        <div class="col bg-danger">3</div>
-        <div class="col bg-primary">4</div>
-        <div class="col bg-info">5</div>
-        <div class="col bg-primary">6</div>
-      </div>
-      <div class="row row bg-danger border border-danger-subtle">
-        <div class="col bg-info">1</div>
-        <div class="col bg-warning">2</div>
-        <div class="col bg-danger">3</div>
-        <div class="col bg-primary">4</div>
-        <div class="col bg-info">5</div>
-        <div class="col bg-primary">6</div>
-      </div>
-    </div>
-    <!-- Nav Tabs -->
-    <ul
-      class="nav nav-tabs justify-content-center mt-5"
-      id="myTab"
-      role="tablist"
-    >
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="home-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#home"
-          type="button"
-          role="tab"
-          aria-controls="home"
-          aria-selected="true"
+  <body class="bg-dark text-info">
+    <div class="container m-5">
+      <div class="row">
+        <div
+          class="col-6 text-end d-flex justify-content-center align-items-center d-flex flex-column"
         >
-          <p>😂</p>
-        </button>
-      </li>
-
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="info-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#info"
-          type="button"
-          role="tab"
-          aria-controls="info"
-          aria-selected="false"
+          <h1>¿Cómo puedo estructurar mi página principal?</h1>
+          <p class="atencion">(A esta estructura le llamos Layout)</p>
+        </div>
+        <div
+          class="col-6 text-start d-flex justify-content-start align-items-center"
         >
-          <p>😥</p>
-        </button>
-      </li>
-    </ul>
-
-    <!-- Contenido de las Tabs -->
-    <div class="tab-content mt-3" id="myTabContent">
-      <!-- Es el contenedor que agrupa las areas de contenido -->
-
-      <!-- Este div es un panel de contenido -->
-      <div
-        class="tab-pane fade show active"
-        id="home"
-        role="tabpanel"
-        aria-labelledby="home-tab"
-      >
-        <div class="container bg-info">
-          <div class="row g-2 justify-content-center p-1 m-1">
-            <div class="col-6 col-md-4 col-lg-2">
-              <div class="ratio ratio-1x1">
-                <img
-                  src="https://tse2.mm.bing.net/th/id/OIP.JMigvu-EFTaGIC6VYCHk2AHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
-                  class="img-fluid object-fit-cover"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-              <div class="ratio ratio-1x1">
-                <img
-                  src="https://tse3.mm.bing.net/th/id/OIP.U4FR3cSK_DCpCwTuydNrBwHaHa?w=626&h=626&rs=1&pid=ImgDetMain&o=7&rm=3"
-                  class="img-fluid object-fit-cover"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-              <div class="ratio ratio-1x1">
-                <img
-                  src="https://t3.ftcdn.net/jpg/06/11/85/88/360_F_611858899_qcKjgRW3afZBCU3vGnMD2BplpLTjCwyf.jpg"
-                  class="img-fluid object-fit-cover"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-              <div class="ratio ratio-1x1">
-                <img
-                  src="https://tse2.mm.bing.net/th/id/OIP.orwVgzT4IuiQXXda4BiaTQHaFK?w=640&h=446&rs=1&pid=ImgDetMain&o=7&rm=3"
-                  class="img-fluid object-fit-cover"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-              <div class="ratio ratio-1x1">
-                <img
-                  src="https://i.pinimg.com/736x/d2/30/f5/d230f50a90ae24d8b79fa9abf2eacfbd--rainbow-wallpaper-over-the-rainbow.jpg"
-                  class="img-fluid object-fit-cover"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-              <div class="ratio ratio-1x1">
-                <img
-                  src="https://img.freepik.com/premium-photo/saturated-color-bioluminescent-abstract-professional-background-with-saturated-colors-8k_763713-5828.jpg"
-                  class="img-fluid object-fit-cover"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-            <div class="col">4</div>
-            <div class="col">5</div>
-            <div class="col">6</div>
-          </div>
-          <div class="row">
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-            <div class="col">4</div>
-            <div class="col">5</div>
-            <div class="col">6</div>
-          </div>
+          <img
+            src="https://img.freepik.com/vector-premium/ilustracion-diseno-plano-joven-expresion-dilema-elegir-muchos-signos-interrogacion_207579-2251.jpg"
+            alt=""
+            class="w-50 h-75 rounded-circle"
+          />
         </div>
       </div>
+    </div>
+    <div class="container mb-5">
+      <h3 class="text-info m-5">✳️ ¿Que es un layout?</h3>
+      <h4 class="atencion">Layout:</h4>
+      <p class="text-warning">
+        Layout (en diseño web y gráfico) es la estructura o distribución visual
+        de los elementos en una página o pantalla. Define cómo se organizan los
+        bloques de contenido: texto, imágenes, botones, menús, etc.
+      </p>
 
-      <!-- Este div es el otro panel de contenido -->
-      <div
-        class="tab-pane fade"
-        id="info"
-        role="tabpanel"
-        aria-labelledby="info-tab"
-      >
-        <p class="text-center text-primary-emphasis bg-danger">
-          Esta <strong>Información</strong> me tiene sudando.
-        </p>
+      <h3 class="m-4">🧩 En desarrollo web:</h3>
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li>Header (encabezado)</li>
+            <li>Navbar (barra de navegación)</li>
+            <li>Main (contenido principal)</li>
+            <li>Sidebar (barra lateral)</li>
+            <li>Footer (pie de página)</li>
+          </ul>
+        </div>
+        <div class="col text-start">
+          <img src="./img/layout.png" alt="" class="w-75 -h-100" />
+        </div>
       </div>
     </div>
+    <div class="container text-center">
+      <h1 class="tex-info">Pues veamos ómo hacerlo en CSS</h1>
+
+      <div
+        class="container d-flex justify-content-center align-items-center m-3"
+      >
+        <div class="loyout">
+          <div class="header-loyout">HEADER</div>
+          <div class="navigation-loyout">NAVIGATION</div>
+          <div class="body-loyout">
+            <div class="sidebar">SIDEBAR</div>
+            <div class="main-content">
+              <p>MAIN CONTENT</p>
+
+              <div class="article-1">ARTICLE</div>
+              <div class="article-2">ARTICLE</div>
+            </div>
+          </div>
+          <div class="footer-loyout">FOOTER</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explicación -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
