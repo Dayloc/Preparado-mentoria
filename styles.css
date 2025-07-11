@@ -20,6 +20,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin-bottom: 600px;
 }
 
 /* Demosle color de fondo para hacernos una guia visual*/
@@ -28,12 +29,18 @@ li {
   background-color: rgb(130, 132, 132);
   height: 20%;
   color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-loyout {
   background-color: rgb(219, 25, 193);
   height: 10%;
   color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .body-loyout {
@@ -46,12 +53,16 @@ li {
 .sidebar {
   background-color: rgb(8, 135, 107);
   width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-content {
   background-color: rgb(95, 207, 93);
   width: 70%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
   padding: 5px;
 }
@@ -60,6 +71,9 @@ li {
   background-color: rgb(219, 99, 25);
   height: 10%;
   color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .article-1 {
@@ -69,4 +83,28 @@ li {
 .article-2 {
   background-color: rgb(57, 57, 201);
   height: 30%;
+}
+pre,
+code {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: strat;
+  align-items: start;
+  color: goldenrod;
+}
+.pasos {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.span-code {
+  color: violet;
+}
+.html {
+  color: greenyellow;
+}
+.paso {
+  color: chocolate;
 }
